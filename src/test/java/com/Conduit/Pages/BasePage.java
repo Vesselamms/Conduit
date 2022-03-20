@@ -21,16 +21,16 @@ public abstract class BasePage {
     public WebElement ProfilButton;
 
     //textarea[@placeholder='Write your article (in markdown)']
-    @FindBy(xpath = "//textarea[@placeholder='Article Title']")
+    @FindBy(xpath = "//input[@placeholder='Article Title']")
     public WebElement TitleArea;
 
     @FindBy(xpath = "//textarea[@placeholder='Write your article (in markdown)']")
     public WebElement WriteArticleArea;
 
-    @FindBy(xpath = "//textarea[@placeholder='What's this article about?']")
+    @FindBy(xpath = "//input[@ng-model='$ctrl.article.description']")
     public WebElement ArticleAboutArea;
 
-    @FindBy(xpath = "//textarea[@placeholder='Enter tags']")
+    @FindBy(xpath = "//input[@placeholder='Enter tags']")
     public WebElement EntertagsArea;
 
 
